@@ -4,7 +4,7 @@ public class MyQueue {
 	private int head = 0;
 	private int tail = -1;
 	private int currentSize = 0;
-	// technique: Circle Array - when head or tail pointer meets last element, point them to queueArr[0]
+	// Technique: Circle Array - when head or tail pointer exceed last element, point them to queueArr[0]
 	public MyQueue(int queueSize) {
 		this.capacity = queueSize;
 		queueArr = new int[this.capacity];
