@@ -11,19 +11,11 @@ public class MyQueue {
 	}
 
 	public boolean isQueueFull(){
-		boolean status = false;
-		if (currentSize == capacity){
-			status = true;
-		}
-		return status;
+		return currentSize == capacity;
 	}
 
 	public boolean isQueueEmpty(){
-		boolean status = false;
-		if (currentSize == 0){
-			status = true;
-		}
-		return status;
+		return currentSize == 0;
 	}
 
 	public void enqueue(int item) {
